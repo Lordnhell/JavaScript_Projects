@@ -1,0 +1,272 @@
+/* font family import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    padding: 5px;
+    font-size: 120% ;
+    background-color:  rgba(251, 227, 203, 0.924);
+}
+
+body.header{
+    height: auto;
+    width: 100%;
+}
+
+/* this is the start of the collapsable sidebar styling and animations */
+/* collapsable sidebar animations */
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/* styling for website logo */
+#main a{
+    text-decoration: none;
+    font-size: 50px;
+    color: rgba(250, 128, 13, 0.924);
+}
+
+/* collapsable sidebar styling */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* this is for opening the sidebar */
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+ /* this is for closing the sidebar */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* search box styling */
+.sidebar input[type=text] {
+    width: 87%;
+    float: right;
+    padding: 6px;
+    padding-right: 0px;
+    border: none;
+    /* margin-top: 8px; */
+    margin-right: 16px;
+    margin-left: 2px;
+    font-size: 17px;
+}
+
+/* search menu styling */
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the search links */
+#myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: rgb(212, 199, 199);
+    display: block
+}
+  
+#myMenu li a:hover {
+    background-color: #eee;
+}
+
+/* styling for individual blog cards on home screen or index.html */
+#card {
+    background-color: white;
+    /* padding: 20px; */
+    margin-top: 20px;
+  }
+
+.header {
+    font-size: 50;
+    text-align: center;
+    color:  rgba(250, 128, 13, 0.924);
+    margin-bottom: 10px
+}
+
+#findOutLink{
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(59, 29, 1);
+}
+
+/* styling for page content on index page */
+.container{
+
+    height: auto;
+    width:auto  ;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -50px;
+   
+}
+.container .blogcard {
+    height: 500px;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.container .blogcard:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:rgb(219, 132, 0);
+    color: white;
+}
+
+.container .blogcard img{
+    width: 300px;
+}
+
+.container .blogcard p {
+    font-size: 28px;
+}
+
+/* used in each of the news article pages */
+.container2 {
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: 20px;
+}
+
+/* used in each of the news article pages */
+.container2 p{
+    font-size: 25px;
+}
+
+/* used in each of the news article pages for responiveness */
+.container2 img{
+    width: 50%;
+    height: auto;
+}
+
+/* used in the contacts page */
+.container3 a{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(59, 29, 1);
+}
+
+@media (max-width: 400px){
+    .container2 img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* navigation bar styles */
+
+#navbar {
+    overflow: hidden;
+    background-color: #333; 
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active {
+    background-color: rgb(255, 153, 0);
+    color: white;
+}
+
+/* attempt to implement a nav bar that scrolls with the page */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .container {
+    padding-top: 60px;
+}
+
+/* dividers to segregate the categories */
+#politics.divider {
+    background-color: rgb(251, 255, 0);
+    text-align: center;
+}
+
+#cars.divider {
+    background-color: rgba(123, 255, 0, 0.5);
+    text-align: center;
+}
+
+#sports.divider {
+    background-color: rgb(7, 233, 253);
+    text-align: center;
+}
+
+#business.divider{
+    background-color: rgb(150, 72, 251);
+    text-align: center;
+}
+
+/* footer styling */
+.firstColumn a{
+    padding-right: 30%;
+    padding-left: 15%;
+  }
+  
+  .lastColumn a{
+    padding-left: 30%;
+  }
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: white;
+    margin-top: 20px;
+  }
+
+  .footer a {
+    margin: 220px;
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(59, 29, 1);
+  }

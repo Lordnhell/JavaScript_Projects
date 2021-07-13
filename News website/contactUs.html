@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LH News</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header" id="card">
+        <div id="main">
+            <button class="openbtn" onclick="openNav()" style="float: left;">☰ </button>  
+            
+            <a href="./index.html">LH News</a>
+            <p>Facts to make you look smarter.</p>
+            <h1>Contacts</h1>
+        </div>
+    </div>
+
+    <!-- animated sidebar html -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="./index.html">Home</a>
+        <a href="./politics.html">Politics</a>
+        <a href="./cars.html">Cars</a>
+        <a href="./sports.html">Sports</a>
+        <a href="./business.html">Business</a>
+        <a href="./contactUs.html" style="color: white;">Contacts</a>
+        <a href="./report.html">Report</a>
+
+        <!-- searchbar box and inputs you can search from list components html -->
+        <!-- search box html -->
+        <input type="text" id="sidebarSearch" onkeyup="searchFunction()" placeholder="Search...">
+        <ul id="myMenu">
+            <!-- Searchable list html -->
+            <li><a href="./politics.html#Raeesah Khan">Raeesah Khan</a></li>
+            <li><a href="./politics.html#trump">Donald Trump</a></li>
+            <li><a href="./politics.html#tiktok">Tiktok</a></li>
+            <li><a href="./politics.html#kimjong">Kim Jong Un</a></li>
+            <li><a href="./cars.html#porsche918">Porsche 918</a></li>
+            <li><a href="./cars.html#ferrari">Ferrari</a></li>
+            <li><a href="./cars.html#bmw">BMW</a></li>
+            <li><a href="./cars.html#bugatti">Bugatti</a></li>
+            <li><a href="./sports.html#football">Football</a></li>
+            <li><a href="./sports.html#tennis">Tennis</a></li>
+            <li><a href="./sports.html#f1">Formula One</a></li>
+            <li><a href="./sports.html#ipl">IPL 2020</a></li>
+            <li><a href="./business.html#facebook">Facebook</a></li>
+            <li><a href="./business.html#apple">Apple</a></li>
+            <li><a href="./business.html#wechat">WeChat</a></li>
+            <li><a href="./business.html#ebay">Ebay</a></li>
+        </ul>
+    </div>
+
+    <!-- login page html -->
+    <div class="container3">
+        <div class ="title" style="text-align: center;"> Login</div>
+    <form id = "form" style="text-align: center;">
+      <br> 
+      <br> 
+        <div class="pt">E-mail: &nbsp;&nbsp;</div>
+    <input type = "email" placeholder = "Email-ID">
+      <br>
+      <br>
+      <br> 
+        <div class="pt">Enter Password: &nbsp;&nbsp;</div>
+    <input type = "text" placeholder = "Password here">
+      <br>
+      <br>
+      <br> 
+      <div id = "part2">
+      <div class="btn-book">
+      <a href="./index.html" class="btn-book">Login</a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="pt">Do not have an account yet? <a href="#">Register!&nbsp;&nbsp;</a></div>
+    </div> 
+    </form>
+    </div>
+
+    <!-- footer html -->
+    <div class="footer">
+        <a href="./index.html" class ="firstColumn">Home</a>
+        <a href = "politics.html">Politics</a>
+        <a href="cars.html" class= "lastColumn">Cars</a>
+        <p></p>
+        <a href="https://www.netflix.com/" class ="firstColumn">Netflix</a>
+        <a href = "https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/" class = "lastColumn">Instagram</a>
+      </div>
+
+</body>
+</html>

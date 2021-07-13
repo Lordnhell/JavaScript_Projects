@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LH News</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- header code for logo and descrete link to index/home page  -->
+    <div class="header" id="card">
+        <div id="main">
+            <button class="openbtn" onclick="openNav()" style="float: left;">☰ </button>  
+            <a href="./index.html">LH News</a>
+            <p>Facts to make you look smarter.</p>
+        </div>
+    </div>
+
+    <!-- animated sidebar html -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="./index.html" style="color: white;">Home</a>
+        <a href="./politics.html">Politics</a>
+        <a href="./cars.html">Cars</a>
+        <a href="./sports.html">Sports</a>
+        <a href="./business.html">Business</a>
+        <a href="./contactUs.html">Contacts</a>
+        <a href="./report.html">Report</a>
+
+        <!-- searchbar box and inputs you can search from list components html -->
+        <!-- search box html -->
+        <input type="text" id="sidebarSearch" onkeyup="searchFunction()" placeholder="Search...">
+        <ul id="myMenu">
+            <!-- Searchable list html -->
+            <li><a href="./politics.html#Raeesah Khan">Raeesah Khan</a></li>
+            <li><a href="./politics.html#trump">Donald Trump</a></li>
+            <li><a href="./politics.html#tiktok">Tiktok</a></li>
+            <li><a href="./politics.html#kimjong">Kim Jong Un</a></li>
+            <li><a href="./cars.html#porsche918">Porsche 918</a></li>
+            <li><a href="./cars.html#ferrari">Ferrari</a></li>
+            <li><a href="./cars.html#bmw">BMW</a></li>
+            <li><a href="./cars.html#bugatti">Bugatti</a></li>
+            <li><a href="./sports.html#football">Football</a></li>
+            <li><a href="./sports.html#tennis">Tennis</a></li>
+            <li><a href="./sports.html#f1">Formula One</a></li>
+            <li><a href="./sports.html#ipl">IPL 2020</a></li>
+            <li><a href="./business.html#facebook">Facebook</a></li>
+            <li><a href="./business.html#apple">Apple</a></li>
+            <li><a href="./business.html#wechat">WeChat</a></li>
+            <li><a href="./business.html#ebay">Ebay</a></li>
+        </ul>
+    </div>
+
+    <!-- navigation bar only displayed on the index page -->
+        <div id="navbar">
+        <a class="active" href="./index.html"> Home </a>
+        <a href="./politics.html">Politics</a>
+        <a href="./cars.html">Cars</a>
+        <a href="./sports.html">Sports</a>
+        <a href="./business.html">Business</a>
+        <a href="./contactUs.html">Contacts</a>
+        <a href="./report.html" style="float: right;">Report</a>
+        </div> 
+
+    <div class="divider" id="politics">
+        <p> Political News
+        </p>
+    </div>
+
+    <!-- start of a container excluding the header and navbar -->
+ <div class="container">
+     <!-- start of a blog card -->
+    <div class="blogcard">
+        <img src="./media/singapore politics.jpg"> <br>
+        <p>Raeesah Khan given stern police warning for social media posts that promoted enmity between different groups</p>
+        <a href="./politics.html#Raeesah Khan" id="findOutLink"> Find out more</a>
+      </div>
+      <!-- start of a blog card -->
+    <div class="blogcard">
+        <img src="./media/trump 2.jpg"> <br>
+        <p>
+         “I Don’t Think Science Knows”: Trump Denies Climate Crisis In Visit To Fire-Ravaged California
+        </p>
+        <a href="./politics.html#trump" id="findOutLink"> Find out more</a>
+    </div>
+    <!-- start of a blog card -->
+    <div class="blogcard">
+        <img src="./media/tiktok.jpg"> <br>
+        <p>
+            Trump gives blessing to deal to allow TikTok to continue to operate in US
+        </p>
+        <a href="./politics.html#tiktok" id="findOutLink"> Find out more</a>
+    </div>
+    <!-- start of a blog card -->
+    <div class="blogcard">
+        <img src="./media/kimjong.jpg"> <br>
+        <p>
+            Kim Jong Un could reveal terrifying ballistic missile at military parade
+        </p>
+        <a href="./politics.html#kimjong" id="findOutLink"> Find out more</a>
+    </div>
+ </div>
+    <!-- divider for introduction to new source of news -->
+    <div class="divider" id="cars">
+        <p> Car News
+        </p>
+    </div>
+    <!-- start of a container excluding the header and navbar -->
+    <div class="container">
+        <!-- start of a blog card -->
+        <div class="blogcard">
+            <img src="./media/porsche918.jpg"> <br>
+            <p>
+                The Ares S1 Is The Lovechild Of A 918 Spyder And The Batmobile
+            </p>
+            <a href="./cars.html#porsche918" id="findOutLink"> Find out more</a>
+          </div>
+          <!-- start of a blog card -->
+        <div class="blogcard">
+            <img src="./media/ferrari.jpg"> <br>
+            <p>
+                The Ferrari Portofino M Is Faster, Sharper And More Expensive
+            </p>
+            <a href="./cars.html#ferrari" id="findOutLink"> Find out more</a>
+        </div>
+        <!-- start of a blog card -->
+        <div class="blogcard">
+            <img src="./media/bmw.jpg"> <br>
+            <p>
+                The New BMW M135i Has Already Shed £10,000 On The Used Market
+            </p>
+            <a href="./cars.html#bmw" id="findOutLink"> Find out more</a>
+        </div>
+        <!-- start of a blog card -->
+        <div class="blogcard">
+            <img src="./media/bugatti.jpg"> <br>
+            <p>
+                Why Wouldn't You Want To Watch A Bugatti Chiron Pur Sport Catching Air?
+            </p>
+            <a href="./cars.html#bugatti" id="findOutLink"> Find out more</a>
+        </div>
+     </div>
+     <!-- divider for introduction to new source of news -->
+     <div class="divider" id="sports">
+        <p> Sports
+        </p>
+    </div>
+    <!-- start of a container excluding the header and navbar -->
+    <div class="container">
+        <div class="blogcard">
+            <img src="./media/football.jpg"> <br>
+            <p>
+                Football: Napoli seize on Parma's mistakes as spectators return to Serie A after six months
+            </p>
+            <a href="./sports.html#football" id="findOutLink"> Find out more</a>
+        </div>
+        <!-- start of a blog card -->
+        <div class="blogcard">
+            <img src="./media/tennis.jpg"> <br>
+            <p>
+                Tennis: Halep to meet Pliskova in Italian Open title clash
+            </p>
+            <a href="./sports.html#tennis" id="findOutLink"> Find out more</a>
+        </div>
+        <!-- start of a blog card -->
+        <div class="blogcard">
+            <img src="./media/f1.jpg"> <br>
+            <p>
+                Formula One: Asians can also compete at the very top, says Red Bull's Thai racer Alex Albon
+            </p>
+            <a href="./sports.html#f1" id="findOutLink"> Find out more</a>
+        </div>
+        <!-- start of a blog card -->
+        <div class="blogcard">
+            <img src="./media/ipl.jpg"> <br>
+            <p>
+                IPL 2020: Rajasthan Royals' Jos Buttler to miss opener due to extended quarantine after travelling with family
+            </p>
+            <a href="./sports.html#ipl" id="findOutLink"> Find out more</a>
+        </div>
+
+    </div>
+    <!-- divider for introduction to new source of news -->
+    <div class="divider" id="business">
+        <p> Business
+        </p>
+    </div>
+    <!-- start of a container excluding the header and navbar -->
+    <div class="container">
+        <!-- start of a blog card -->
+        <div class="blogcard">
+            <img src="./media/facebook.jpg"> <br>
+            <p>
+                Facebook tells Irish court that probe threatens its EU operations: newspaper
+            </p>
+            <a href="./business.html#facebook" id="findOutLink"> Find out more</a>
+        </div>
+        <!-- start of a blog card -->
+        <div class="blogcard">
+            <img src="./media/apple.jpg"> <br>
+            <p>
+                Apple Boosts IPad Air Performance By 40%…And Other Small Business Tech News
+            </p>
+            <a href="./business.html#apple" id="findOutLink"> Find out more</a>
+        </div>
+        <!-- start of a blog card -->
+        <div class="blogcard">
+            <img src="./media/wechat.jpg"> <br>
+            <p>
+                Millions of US users to be hit by WeChat block
+            </p>
+            <a href="./business.html#wechat" id="findOutLink"> Find out more</a>
+        </div>
+        <!-- start of a blog card -->
+        <div class="blogcard">
+            <img src="./media/ebay.jpg"> <br>
+            <p>
+                EBay activates plan to shift more business to UPS and away from Postal Service because of mail delays
+            </p>
+            <a href="./business.html#ebay" id="findOutLink"> Find out more</a>
+        </div>
+
+    </div>
+
+    <!-- footer html -->
+     <div class="footer">
+        <a href="./index.html" class ="firstColumn">Home</a>
+        <a href = "politics.html">Politics</a>
+        <a href="cars.html" class= "lastColumn">Cars</a>
+        <p></p>
+        <a href="https://www.netflix.com/" class ="firstColumn">Netflix</a>
+        <a href = "https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/" class = "lastColumn">Instagram</a>
+      </div>
+</body>
+</html>

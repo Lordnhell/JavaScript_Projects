@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LH News</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header" id="card">
+        <div id="main">
+            <button class="openbtn" onclick="openNav()" style="float: left;">☰ </button>  
+            
+            <a href="./index.html">LH News</a>
+            <p>Facts to make you look smarter.</p>
+            <h1>Report</h1>
+        </div>
+    </div>
+    
+    <!-- animated sidebar html -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="./index.html">Home</a>
+        <a href="./politics.html">Politics</a>
+        <a href="./cars.html">Cars</a>
+        <a href="./sports.html">Sports</a>
+        <a href="./business.html">Business</a>
+        <a href="./contactUs.html">Contacts</a>
+        <a href="./report.html" style="color: white;">Report</a>
+
+        <!-- searchbar box and inputs you can search from list components html -->
+        <!-- search box html -->
+        <input type="text" id="sidebarSearch" onkeyup="searchFunction()" placeholder="Search...">
+        <ul id="myMenu">
+            <!-- Searchable list html -->
+            <li><a href="./politics.html#Raeesah Khan">Raeesah Khan</a></li>
+            <li><a href="./politics.html#trump">Donald Trump</a></li>
+            <li><a href="./politics.html#tiktok">Tiktok</a></li>
+            <li><a href="./politics.html#kimjong">Kim Jong Un</a></li>
+            <li><a href="./cars.html#porsche918">Porsche 918</a></li>
+            <li><a href="./cars.html#ferrari">Ferrari</a></li>
+            <li><a href="./cars.html#bmw">BMW</a></li>
+            <li><a href="./cars.html#bugatti">Bugatti</a></li>
+            <li><a href="./sports.html#football">Football</a></li>
+            <li><a href="./sports.html#tennis">Tennis</a></li>
+            <li><a href="./sports.html#f1">Formula One</a></li>
+            <li><a href="./sports.html#ipl">IPL 2020</a></li>
+            <li><a href="./business.html#facebook">Facebook</a></li>
+            <li><a href="./business.html#apple">Apple</a></li>
+            <li><a href="./business.html#wechat">WeChat</a></li>
+            <li><a href="./business.html#ebay">Ebay</a></li>
+        </ul>
+    </div>
+    <div class="container2">
+        <h1>Report: LH News Responsive website By Devansh Gupta</h1>
+            <p style="font-size: 30px;">
+                Introduction: the LH news website is meant for all sorts of news categories. The overall idea is to make it as concise
+                and to the point as possible. This website has elements that clearly segregate all the different news types into 
+                a dedicated space so that users can navigate more easily on a single page rather having to navigate through 
+                different pages to get to the article that they want to view. I experienced this while researching for this coursework
+                assignment and decided to come up this layout. The blog cards are meant to update everyday with each new article 
+                and with the login feature, prioritize the preferred news categories of the user. 
+                <br>
+                <br>
+                I have implemented an animated side bar with a search menu in it as my javascript implementations. In these,
+                the idea was to provide convenience to the user. If it is an old article or an article that is not in the preferred searches
+                , they can search for it in the sidebar search menu. Otherwise it is hidden from view with a small button at the top.
+                There is also a navigation bar at the top of the index page for ease of navigation when a user enters the site, however 
+                the bar is removed in the article pages because the emphasis of the site is on the content of the article therefore
+                the side bar is used instead so that it takes up as little space as possible. 
+                <br>
+                <br>
+                I was inspired by the concise and efficient design of most news channels. Examples of these sites are : https://www.straitstimes.com/, https://www.washingtonpost.com/ 
+                and more. I was primarily inspired by the card framework used in these websites which provided more emphasis on 
+                the title and the image of the news in the card. It got rid of any details of the individual post. If a reader wants to find out
+                more about the topic, he/she is navigated to a sperate page, automatically scrolled to the specific blog post. I also drew
+                inspiration from websites meant for more designer products like https://shop.mango.com/sg or https://www.apple.com/. 
+                These websites put a lot emphasis on making their websites more appealing to the user so that the time spent on the website is
+                higher. Most of the
+                news websites I viewed were not particularly riddled with design, but the rather bland and had a lot of monochrome colours.  
+                <br>
+                <br>
+                The website is responsive and can adapt to most screen sizes of modern computer screens, phones, and tablets.
+                The elements of the page resize and change positions according to the screen it is being accessed on. For mobiles, 
+                the blog posts become in a single column and resizes the navigation bar, header and footers. 
+                <br>
+                <br>
+                I implemented usability features for blind people by adding alternate text to all of the images in the website. 
+                And as this is a text rich website, the narrator of the website will be very clear and easy to understand. The search 
+                menu is also tailored for very specific searches that include important keywords of any article in the site. The removal of
+                the navigation bar from the other article pages also contributes to this as the narrator will not repeat what it has 
+                already said while first entering the site. The website is also free to be used by all ages as there is no mature
+                content and provides an educational purpose to it as well.  
+                <br>
+                <br>
+                Most of the features implemented required a lot of tinkering in order to properly set it in as I was unfamiliar 
+                with the values and controls of the html and css. The media queries for making the website responsive were perhaps
+                the most challenging segment of this build. A lot of sources like videos, articles and other websites had to be referred
+                to in order to implement it correctly. A new tool I used that was not used in our course was the Visual studio code software
+                by Microsoft. I found it to be very suitable to my needs and way of building. The shortcuts and the extensions which
+                are made by free users using the software were very helpful in producing the product.
+                <br>
+                <br>
+                The aspects that really worked well are the side bar, search bar menu and the blog posts. I am very satisfied with its design and functionality. 
+                The animations are smooth, the searches work well and the search results navigate me to the specific blog post. 
+                <br>
+                <br>
+                However, despite my efforts to learn the media queries, the responsiveness of the website on some screen sizes
+                does not work as well as it should. When resizing the website with the browser tools, the elements get distorted and look squished.
+                In the future, I will pay more emphasis on the responsiveness of the website.
+                <br>
+                <br>
+            </p>
+        <h1>Citations –</h1>
+            <p>
+                <br>
+                <br>
+                How TO - Search Menu, https://www.w3schools.com/howto/howto_js_search_menu.asp
+                <br>
+                <br>
+                [1]"Donald Trump Climate Crisis Article": nowthisnews.com, '“I Don’t Think Science Knows”: Trump Denies Climate Crisis In Visit 
+                To Fire-Ravaged California', 2020, [Online]. Available: https://nowthisnews.com/politics/trump-denies-climate-crisis-in-visit-to-fire-ravaged-california
+                <br>
+                <br>
+                [2]"Singapore Politics Article": straitstimes.com, 'WP MP Raeesah Khan given stern police warning for social media posts that promoted enmity between different groups', 2020, [Online].
+                Available: https://www.straitstimes.com/singapore/wp-mp-raeesah-khan-given-stern-police-warning-for-social-media-posts-which-promoted-enmity
+                <br>
+                <br>
+                [3]"Kim Jong Un Article": nypost.com, 'Kim Jong Un could reveal terrifying ballistic missile at military parade', 2020, [Online].
+                Available: https://nypost.com/2020/09/17/kim-jong-un-could-reveal-new-ballistic-missile-at-military-parade/
+                <br>
+                <br>
+                [4]"TikTok Article": channelnewsasia.com, 'Trump gives blessing to deal to allow TikTok to continue to operate in US', 2020, [Online].
+                Available: https://www.channelnewsasia.com/news/business/tiktok-trump-gives-blessing-to-deal-to-allow-to-continue-13126568
+                <br>
+                <br>
+                [5]"Ferrari Article": carthrottle.com, 'The Ferrari Portofino M Is Faster, Sharper And More Expensive', 2020, [Online].
+                Available: https://www.carthrottle.com/post/the-ferrari-portofino-m-is-faster-sharper-and-more-expensive/
+                <br>
+                <br>
+                [6]"Football Article": straitstimes.com, 'Football: Napoli seize on Parma's mistakes as spectators return to Serie A after six months', 2020, [Online]. Available: 
+                https://www.straitstimes.com/sport/football/football-napoli-seize-on-parmas-mistakes-as-spectators-return-to-serie-a-after-six
+                <br>
+                <br>
+                [7]"Ares Article": carthrottle.com, 'The Ares S1 Is The Lovechild Of A 918 Spyder And The Batmobile', 2020, [Online]. Available: 
+                https://www.carthrottle.com/post/the-ares-s1-the-lovechild-of-a-918-spyder-and-the-batmobile/
+                <br>
+                <br>
+                [8]"BMW Article": carthrottle.com, 'The New BMW M135i Has Already Shed £10,000 On The Used Market', 2020, [Online]. Available:
+                https://www.carthrottle.com/post/the-new-bmw-m135i-has-already-shed-10000-on-the-used-market/
+                <br>
+                <br>
+                [9]"Bugatti Article": carthrottle.com, 'Why Wouldn't You Want To Watch A Bugatti Chiron Pur Sport Catching Air?', 2020, [Online]. Available:
+                https://www.carthrottle.com/post/why-wouldnt-you-want-to-watch-a-bugatti-chiron-pur-sport-catching-air/
+                <br>
+                <br>
+                [10]"Cricket Article": firstpost.com, 'IPL 2020: Rajasthan Royals' Jos Buttler to miss opener due to extended quarantine
+                after travelling with family', 2020, [Online]. Available: 
+                https://www.firstpost.com/firstcricket/sports-news/ipl-2020-rajasthan-royals-jos-buttler-to-miss-opener-due-to-extended-quarantine-after-travelling-with-family-8834411.html
+                <br>
+                <br>
+                [11]"eBay Article": washingtonpost.com, 'EBay activates plan to shift more business to UPS and away from Postal Service because of mail delays', 2020,
+                [Online]. Available: https://www.washingtonpost.com/business/2020/09/19/usps-ebay-mail-delays/
+                <br>
+                <br>
+                [12]“tennis article”: straitstimes.com, ‘Tennis: Halep to meet Pliskova in Italian Open title clash’,2020,[Online].
+                Available: https://www.straitstimes.com/sport/tennis/tennis-halep-to-meet-pliskova-in-italian-open-title-clash
+                <br>
+                <br>
+                [13]”f1 article” : straitstimes.com,’ Formula One: Asians can also compete at the very top, says Red Bull's Thai racer Alex Albon’,2020,[Online]. Available:
+                https://www.straitstimes.com/sport/formula-one/formula-one-asians-can-also-compete-at-the-very-top-says-red-bulls-thai-racer-alex
+                <br>
+                <br>
+                [14] “facebook article”: straitstimes.com,’ Facebook tells Irish court that probe threatens its EU operations: newspaper’,2020,[online]. Available:
+                https://www.straitstimes.com/business/facebook-tells-irish-court-that-probe-threatens-its-eu-operations-newspaper
+                <br>
+                <br>
+                [15] “wechat article”: channelnewsasia.com/, ‘Millions of US users to be hit by WeChat block’, 2020,[Online], Available:
+                https://www.channelnewsasia.com/news/business/millions-of-us-users-to-be-hit-by-wechat-block-13127068
+                <br>
+                <br>
+                [16] “apple article”: forbes.com, ‘Apple Boosts IPad Air Performance By 40%…And Other Small Business Tech News’,2020,[Online], Available: 
+                https://www.forbes.com/sites/quickerbettertech/2020/09/20/apple-boosts-ipad-air-performance-by-40and-other-small-business-tech-news/#43d93c1a6069
+                <br>
+                <br>
+                
+            </p>
+
+            <h1>Wireframe screenshots -</h1>
+            <img src="./Wireframe and report back-up/screenshots/page1.PNG" alt="">
+            <br>
+            <br>
+            <img src="./Wireframe and report back-up/screenshots/page2.PNG" alt="">
+            <br>
+            <br>
+            <img src="./Wireframe and report back-up/screenshots/page3.PNG" alt="">
+            <br>
+            <br>
+            <img src="./Wireframe and report back-up/screenshots/page4.PNG" alt="">
+</div>
+
+ <!-- footer html -->
+ <div class="footer">
+    <a href="./index.html" class ="firstColumn">Home</a>
+    <a href = "politics.html">Politics</a>
+    <a href="cars.html" class= "lastColumn">Cars</a>
+    <p></p>
+    <a href="https://www.netflix.com/" class ="firstColumn">Netflix</a>
+    <a href = "https://www.facebook.com/">Facebook</a>
+    <a href="https://www.instagram.com/" class = "lastColumn">Instagram</a>
+  </div>
+</body>
+</html>
